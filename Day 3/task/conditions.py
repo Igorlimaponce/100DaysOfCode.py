@@ -9,6 +9,8 @@ if altura >= 1.2:
     if idade >= 18:
         print("Voce devera pagar 12 reais")
         total = 12
+    elif idade >= 45 and idade <= 55:
+        print("Fique a vontade, seu ingresso foi de graca")
     else:
         print("Voce devera pagar 7 reais")
         total = 7
