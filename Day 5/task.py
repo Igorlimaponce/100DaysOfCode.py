@@ -64,11 +64,14 @@ def task_of_day():
     ]
     lista_simbolos = ["!", "#", "$", "%", "&", "(", ")", "*", "+"]
 
+    # Aqui tudo é colocado em uma lista de forma aleatoria
     lista_completa = []
     lista_completa.extend(random.sample(lista_numeros, numeros - 1))
     lista_completa.extend(random.sample(lista_letras, letras - 1))
     lista_completa.extend(random.sample(lista_simbolos, simbolos - 1))
+
     print(lista_completa)
+
     for index, character in enumerate(lista_completa):
         lista_completa[index] = str(character)
     random.shuffle(lista_completa)
